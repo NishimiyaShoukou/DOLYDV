@@ -18,5 +18,5 @@ add_compile_options(-Wall)
 
 add_executable(doly_core ${SRC_MAIN})
 
-# 链接库
+
 target_link_libraries(doly_core ${FUNC_LIB})

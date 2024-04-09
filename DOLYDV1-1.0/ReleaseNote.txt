@@ -1,0 +1,11 @@
+1、
+当前版本号 Curr Version：DOLYDV1-1.0
+上一版本号 Pre Version：
+发布日期 Release Date：2024-4-9
+开发人 Developer：Thoelc
+发布人 Publisher：Thoelc
+设备型号 Dev Type：Doly Robot (rpicm4 2G)
+对应需求/问题 Q/A：create file
+更新内容 Update Content：
+使用变化(通信协议、参数、界面等) Usage Changelog：
+===============================================================

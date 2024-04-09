@@ -2,9 +2,9 @@
  * @Author: Thoelc 623624394@qq.com
  * @Date: 2024-04-09 19:01:44
  * @LastEditors: Thoelc 623624394@qq.com
- * @LastEditTime: 2024-04-09 19:03:54
+ * @LastEditTime: 2024-04-10 00:11:54
  * @FilePath: \DOLYDV1-1.0\use\init\main.cpp
- * @Description: ??????,???`customMade`, ??koroFileHeader???? ????: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @Description: main.c
  */
 #include "ServoMotor.h"
 #include "Gpio.h"
@@ -45,8 +45,8 @@ int main()
 	// GPIO::writePwm(Pwm_Motor_Right_L, 1000);
 	// wait to get zero position
 	std::this_thread::sleep_for(std::chrono::milliseconds(5000));
-GPIO::writePwm(Pwm_Motor_Left_H, 0);
-GPIO::writePwm(Pwm_Motor_Right_L, 0);
+	GPIO::writePwm(Pwm_Motor_Left_H, 0);
+	GPIO::writePwm(Pwm_Motor_Right_L, 0);
 	ServoMotor::set(SERVO_LEFT, 50, 100);
 	ServoMotor::set(SERVO_RIGHT, 50, 100);
 	// Sets servo positions

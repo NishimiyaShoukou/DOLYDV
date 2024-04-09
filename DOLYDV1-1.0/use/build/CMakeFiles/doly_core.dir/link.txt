@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/doly_core.dir/mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o -o bin/doly_core  -lpthread ../lib/libGpio.a ../lib/libLcdControl.a ../lib/libServoMotor.a ../lib/libTimer.a ../lib/libapp.a 

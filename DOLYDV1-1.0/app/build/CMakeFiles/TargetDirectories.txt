@@ -1,0 +1,3 @@
+/mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/app/build/CMakeFiles/app_static.dir
+/mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/app/build/CMakeFiles/edit_cache.dir
+/mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/app/build/CMakeFiles/rebuild_cache.dir

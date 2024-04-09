@@ -1,2 +1,2 @@
-/usr/bin/ar qc /mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a CMakeFiles/app_static.dir/mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.o
-/usr/bin/ranlib /mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a
+/usr/bin/ar qc /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.o
+/usr/bin/ranlib /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a

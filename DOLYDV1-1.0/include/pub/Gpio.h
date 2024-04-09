@@ -29,6 +29,11 @@ enum PwmId :uint8_t
 	Pwm_Led_Right_B = 9,
 	Pwm_Led_Right_G = 10,
 	Pwm_Led_Right_R = 11,
+
+	Pwm_Motor_Left_H = 12,
+	Pwm_Motor_Left_L = 13,
+	Pwm_Motor_Right_H = 14,
+	Pwm_Motor_Right_L = 15,
 };
 
 namespace GPIO

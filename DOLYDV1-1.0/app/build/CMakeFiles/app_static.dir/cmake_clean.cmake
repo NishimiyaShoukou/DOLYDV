@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "/mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a"
-  "/mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/use/lib/libapp.pdb"
-  "CMakeFiles/app_static.dir/mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.o"
-  "CMakeFiles/app_static.dir/mnt/hgfs/Doly/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.o.d"
+  "/home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a"
+  "/home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.pdb"
+  "CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

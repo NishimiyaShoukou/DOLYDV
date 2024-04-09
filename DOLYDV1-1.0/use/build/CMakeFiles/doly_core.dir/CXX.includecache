@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../app/AppDoly/AppDoly.h
+
+../../include/pub/Gpio.h
+stdint.h
+-
+
+../../include/pub/ServoMotor.h
+stdint.h
+-
+
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp
+ServoMotor.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/ServoMotor.h
+Gpio.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/Gpio.h
+thread
+-
+AppDoly.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/AppDoly.h
+

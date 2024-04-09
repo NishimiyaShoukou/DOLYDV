@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp
+AppDoly.h
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.h
+iostream
+-
+
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.h
+

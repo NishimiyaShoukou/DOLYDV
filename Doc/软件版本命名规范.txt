@@ -5,3 +5,11 @@ DOLYDV代表DOLY机器人DIY版本
 			功能改进或者增强。这些改动可能导致与旧版本的不兼容性。例如，在同一主版本号下的两个不同次版本号可能表示产品的新特性和功能增加。
 修订版本号（Revision/Patch Version）：主要用于记录较小的修改、Bug修复或其他细微的变动。
 				经常发布修订版以维护软件的稳定性和功能性。这部分通常由项目经理决定何时进行更改。
+===================================================================================
+DOLYDV stands for DOLY robot DIY version
+Major Version: Identifies the major version of the product. When there is a large change in the function module,
+			For example, if the overall architecture changes or multiple new modules are added, the major version number will be upgraded. For example, the transition from DOS 3.x to DOS 4.0 involves a change in the major version number.
+Minor Version: Compared with the major version number, the upgrade of the minor version number often corresponds to local changes in the product.
+			Improvements or enhancements. These changes may result in incompatibilities with older versions. For example, two different minor release numbers under the same major version number may indicate new features and functionality additions to the product.
+Revision/Patch Version: Mainly used to record minor changes, bug fixes, or other minor changes.
+				Revisions are frequently released to maintain the stability and functionality of the software. This part is usually up to the project manager to decide when to make changes.

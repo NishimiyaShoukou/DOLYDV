@@ -1,0 +1,3 @@
+/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles/rebuild_cache.dir
+/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles/edit_cache.dir
+/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles/base_static.dir

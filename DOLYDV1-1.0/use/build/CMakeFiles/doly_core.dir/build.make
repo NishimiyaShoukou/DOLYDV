@@ -76,33 +76,35 @@ include CMakeFiles/doly_core.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/doly_core.dir/flags.make
 
-CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o: CMakeFiles/doly_core.dir/flags.make
-CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/use/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o -c /home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp
+CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: CMakeFiles/doly_core.dir/flags.make
+CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/use/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o -c /home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp
 
-CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp > CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.i
+CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp > CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.i
 
-CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp -o CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.s
+CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp -o CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.s
 
 # Object files for target doly_core
 doly_core_OBJECTS = \
-"CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o"
+"CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o"
 
 # External object files for target doly_core
 doly_core_EXTERNAL_OBJECTS =
 
-bin/doly_core: CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o
+bin/doly_core: CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o
 bin/doly_core: CMakeFiles/doly_core.dir/build.make
 bin/doly_core: ../lib/libGpio.a
 bin/doly_core: ../lib/libLcdControl.a
 bin/doly_core: ../lib/libServoMotor.a
 bin/doly_core: ../lib/libTimer.a
 bin/doly_core: ../lib/libapp.a
+bin/doly_core: ../lib/libbase.a
+bin/doly_core: ../lib/libgui.a
 bin/doly_core: CMakeFiles/doly_core.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/use/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/doly_core"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/doly_core.dir/link.txt --verbose=$(VERBOSE)

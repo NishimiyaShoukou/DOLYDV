@@ -142,32 +142,32 @@ doly_core/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doly_core.dir/build.make CMakeFiles/doly_core.dir/build
 .PHONY : doly_core/fast
 
-home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.o: home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o
+home/pi/DOLYDV/DOLYDV1-1.0/use/main.o: home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o
 
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.o
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/main.o
 
 # target to build an object file
-home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doly_core.dir/build.make CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o
+home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doly_core.dir/build.make CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o
 
-home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.i: home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.i
+home/pi/DOLYDV/DOLYDV1-1.0/use/main.i: home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.i
 
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.i
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/main.i
 
 # target to preprocess a source file
-home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doly_core.dir/build.make CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.i
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.i
+home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doly_core.dir/build.make CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.i
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.i
 
-home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.s: home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.s
+home/pi/DOLYDV/DOLYDV1-1.0/use/main.s: home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.s
 
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.s
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/main.s
 
 # target to generate assembly for a file
-home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doly_core.dir/build.make CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.s
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.s
+home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doly_core.dir/build.make CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.s
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... doly_core"
-	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.o"
-	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.i"
-	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.s"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/use/main.o"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/use/main.i"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/use/main.s"
 .PHONY : help
 
 

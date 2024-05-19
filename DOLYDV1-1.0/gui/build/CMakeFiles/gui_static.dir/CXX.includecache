@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/pub/LcdControl.h
+stdint.h
+-
+vector
+-
+
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/efont.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp
+eye.h
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.h
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+thread
+-
+time.h
+-
+chrono
+-
+animation.h
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.h
+efont.h
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/efont.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.h
+LcdControl.h
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/LcdControl.h
+

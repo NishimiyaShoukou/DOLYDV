@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp.o"
+  "CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o"
   "bin/doly_core"
   "bin/doly_core.pdb"
 )

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/base.cpp
+base.h
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/base.h
+iostream
+-
+
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/base.h
+

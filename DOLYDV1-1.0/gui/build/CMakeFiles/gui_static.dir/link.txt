@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libgui.a CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.cpp.o CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o
+/usr/bin/ranlib /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libgui.a

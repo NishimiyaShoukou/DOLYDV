@@ -16,6 +16,7 @@ enum GpioState :bool
 
 enum PinId :uint8_t
 {
+
 	// >= 50 GPIO_CHIP2
 	Pin_Servo_Left_Enable = 56,
 	Pin_Servo_Right_Enable = 57,

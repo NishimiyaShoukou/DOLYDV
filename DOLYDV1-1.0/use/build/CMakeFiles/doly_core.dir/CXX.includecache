@@ -16,13 +16,19 @@ stdint.h
 stdint.h
 -
 
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/main.cpp
+/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp
+main.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/main.h
 ServoMotor.h
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/ServoMotor.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/ServoMotor.h
 Gpio.h
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/Gpio.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/Gpio.h
 thread
 -
 AppDoly.h
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/AppDoly.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/AppDoly.h
+iostream
+-
+
+/home/pi/DOLYDV/DOLYDV1-1.0/use/main.h
 

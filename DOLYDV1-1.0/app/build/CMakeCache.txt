@@ -209,6 +209,9 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Dependencies for the target
+app_static_LIB_DEPENDS:STATIC=general;-lpthread;
+
 //Value Computed by CMake
 doly_cmake_BINARY_DIR:STATIC=/home/pi/DOLYDV/DOLYDV1-1.0/app/build
 

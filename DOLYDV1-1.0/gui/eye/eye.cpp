@@ -16,6 +16,8 @@
 #include <chrono>
 #include "animation.h"
 #include "efont.h"
+#include "love.h"
+
 #define TEST 1
 int FillBuffer(uint8_t *left_buff, uint8_t *right_buff);
 int FillBufferExample();
@@ -78,8 +80,9 @@ void gui_task(void)
 	show_eye(120, 120, 90, 0X000000, LcdRight);
 	show_eye(120, 120, 90, 0X000000, LcdLeft);
 	FillBuffer((uint8_t*)g_GuiVram[LcdLeft], (uint8_t*)g_GuiVram[LcdRight]);
+
 #else
-    FillBuffer((uint8_t*)gImage_dolyimage, (uint8_t*)gImage_dolyimage);
+    FillBuffer((uint8_t*)gImage_love, (uint8_t*)gImage_love);
 
 #endif
 	

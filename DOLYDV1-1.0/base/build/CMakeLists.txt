@@ -9,7 +9,7 @@ aux_source_directory(${PROJECT_BINARY_DIR}/../kernel_dir SRC_BASE)
 
 # Include directories for public headers
 include_directories (${PROJECT_BINARY_DIR}/../../include/pub)
-
+include_directories (${PROJECT_BINARY_DIR}/../kernel_dir)
 # Add compiler options to enable Wall warnings
 add_compile_options(-Wall)
 # Link the system library

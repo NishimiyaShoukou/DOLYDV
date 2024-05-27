@@ -25,11 +25,11 @@ enum PinId :uint8_t
 enum PwmId :uint8_t
 {
 	Pwm_Led_Left_B = 6,
-	Pwm_Led_Left_G = 7,
-	Pwm_Led_Left_R = 8,
+	Pwm_Led_Left_R = 7,
+	Pwm_Led_Left_G = 8,
 	Pwm_Led_Right_B = 9,
-	Pwm_Led_Right_G = 10,
-	Pwm_Led_Right_R = 11,
+	Pwm_Led_Right_R = 10,
+	Pwm_Led_Right_G = 11,
 
 	Pwm_Motor_Left_H = 12,
 	Pwm_Motor_Left_L = 13,

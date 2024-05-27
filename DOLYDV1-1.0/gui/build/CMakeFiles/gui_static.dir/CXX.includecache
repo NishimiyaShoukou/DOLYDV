@@ -35,8 +35,16 @@ animation.h
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.h
 efont.h
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/efont.h
+love.h
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/love.h
+small_minmin.h
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/small_minmin.h
 
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.h
 LcdControl.h
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/LcdControl.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/love.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/small_minmin.h
 

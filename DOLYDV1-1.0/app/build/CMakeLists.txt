@@ -10,8 +10,10 @@ aux_source_directory(${PROJECT_BINARY_DIR}/../AppDoly SRC_APP)
 # Include directories for public headers
 include_directories (${PROJECT_BINARY_DIR}/../../include/pub)
 # Include directories for base headers
+
 include_directories (${PROJECT_BINARY_DIR}/../../base/kernel_dir)
 include_directories (${PROJECT_BINARY_DIR}/../../gui/eye)
+
 # Add compiler options to enable Wall warnings
 add_compile_options(-Wall)
 # Link the system library

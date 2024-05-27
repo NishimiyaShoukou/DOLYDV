@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pi/DOLYDV/DOLYDV1-1.0/base/build/../../include/pub
+CXX_INCLUDES = -I/home/pi/DOLYDV/DOLYDV1-1.0/base/build/../../include/pub -I/home/pi/DOLYDV/DOLYDV1-1.0/base/build/../kernel_dir
 
 CXX_FLAGS = -Wall
 

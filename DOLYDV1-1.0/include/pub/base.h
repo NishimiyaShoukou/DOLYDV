@@ -1,3 +1,5 @@
 #pragma once
 
-void base_task(void);
+
+/*********************  base.h  *******************************/
+extern int scanKeyboard(void);

@@ -36,10 +36,11 @@ void app_task(void)
 	ServoMotor::set(SERVO_LEFT, 0, 100);
 	ServoMotor::set(SERVO_RIGHT, 0, 100);
 	GPIO::writePwm(Pwm_Led_Left_R, 4095);
-    GPIO::writePwm(Pwm_Led_Left_B, 4095);
+    GPIO::writePwm(Pwm_Led_Left_B, 835);
 	GPIO::writePwm(Pwm_Led_Left_G, 4095);
-	    GPIO::writePwm(Pwm_Led_Right_B, 0);
+	GPIO::writePwm(Pwm_Led_Right_R, 4095);
 	GPIO::writePwm(Pwm_Led_Right_G, 4095);
+	GPIO::writePwm(Pwm_Led_Right_B, 835);
 		ServoMotor::set(SERVO_LEFT, 100, 100);
 	ServoMotor::set(SERVO_RIGHT, 100, 100);
 	// wait to get zero position

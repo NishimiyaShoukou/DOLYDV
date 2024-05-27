@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/base.cpp
-base.h
-/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/base.h
-iostream
--
+../kernel_dir/keyctl.h
 
-/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/base.h
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp
+keyctl.h
+-
+termio.h
+-
+stdio.h
+-
+unistd.h
+-
 

@@ -1,2 +1,2 @@
-/usr/bin/ar qc /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libbase.a CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/base.cpp.o
+/usr/bin/ar qc /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libbase.a CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o
 /usr/bin/ranlib /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libbase.a

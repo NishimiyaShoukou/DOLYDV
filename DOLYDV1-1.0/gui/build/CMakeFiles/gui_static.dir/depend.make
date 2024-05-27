@@ -9,4 +9,6 @@ CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: /home/pi
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/efont.h
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.h
+CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/love.h
+CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/small_minmin.h
 

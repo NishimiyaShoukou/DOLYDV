@@ -4,6 +4,7 @@
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../app/AppDoly/AppDoly.h
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../include/pub/Gpio.h
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../include/pub/ServoMotor.h
+CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../include/pub/base.h
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/use/main.h
 

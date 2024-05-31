@@ -8,7 +8,7 @@ aux_source_directory(${PROJECT_BINARY_DIR}/../ SRC_MAIN)
 aux_source_directory(${PROJECT_BINARY_DIR}/../init SRC_INIT) 
 # Include directories for public headers and application headers
 include_directories (${PROJECT_BINARY_DIR}/../../include/pub)
-include_directories (${PROJECT_BINARY_DIR}/../../app/AppDoly)
+
 include_directories (${PROJECT_BINARY_DIR}/../init)
 # find_library(FUNC_LIB ${PROJECT_BINARY_DIR}/../lib)
 file(GLOB FUNC_LIB ${PROJECT_BINARY_DIR}/../lib/*.a ${PROJECT_BINARY_DIR}/../lib/*.so)
@@ -22,7 +22,7 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 # Add compiler options
 add_compile_options(-Wall)
 # add the executable
-add_executable(doly_core ${SRC_MAIN})
+add_executable(doly_core ${SRC_MAIN} ${SRC_INIT})
 
 message("FUNC_LIB = ${FUNC_LIB}")
 message("SRC_INIT = ${SRC_INIT}")

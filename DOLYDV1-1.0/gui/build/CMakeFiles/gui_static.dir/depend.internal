@@ -5,10 +5,14 @@ CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.cpp.o
  /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.cpp
  /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.h
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o
+ ../../app/AppDoly/inc/AppCommu.h
+ ../../app/AppDoly/inc/AppDoly.h
+ ../../commu/tcp/TcpServer.h
  ../../include/pub/LcdControl.h
+ ../../include/pub/app.h
+ ../../include/pub/commu.h
  /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.h
  /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/efont.h
  /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp
  /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.h
  /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/love.h
- /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/small_minmin.h

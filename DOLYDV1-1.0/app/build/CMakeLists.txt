@@ -5,12 +5,12 @@ cmake_minimum_required (VERSION 2.8)
 project (doly_cmake)
 
 # Locate source files within the AppDoly directory
-aux_source_directory(${PROJECT_BINARY_DIR}/../AppDoly SRC_APP) 
+aux_source_directory(${PROJECT_BINARY_DIR}/../AppDoly/src SRC_APP) 
 
 # Include directories for public headers
 include_directories (${PROJECT_BINARY_DIR}/../../include/pub)
 # Include directories for base headers
-
+include_directories (${PROJECT_BINARY_DIR}/../AppDoly/inc)
 include_directories (${PROJECT_BINARY_DIR}/../../base/kernel_dir)
 include_directories (${PROJECT_BINARY_DIR}/../../gui/eye)
 

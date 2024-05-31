@@ -17,7 +17,8 @@
 #include "animation.h"
 #include "efont.h"
 #include "love.h"
-
+#include "app.h"
+#include "commu.h"
 #define TEST 1
 int FillBuffer(uint8_t *left_buff, uint8_t *right_buff);
 int FillBufferExample();
@@ -51,41 +52,62 @@ void gui_init(LcdColorDepth depth)
     
 	
 }
-void gui_task(void)
+void* gui_task(void *)
 {
 	char timr_str[20];
+	static uint8_t ip_show_flag = 1;
+	string get_ip;
+	char port[20];
 	gui_init(LCD_18BIT);
 	// LcdControl::init(LCD_18BIT);
     LcdColorDepth depth = LcdControl::getColorDepth();
-#if TEST 
+	for (;;)
+	{
+		if(ip_show_flag == 1)  // show local ip
+        {
+			draw_string(60, 60, "IP_ADDR:", 0XFFFFFF, LcdLeft, 32);
+			get_ip = tcp.get_local_ip();
+			printf("local ip:%s\n\r", get_ip.c_str());
+			draw_string(30, 96, get_ip.c_str(), 0XFFFFFF, LcdLeft, 32);
+            sprintf(port, "TCP PORT:%d", IP_PORT);
+		    draw_string(30, 122, port, 0XFFFFFF, LcdLeft, 32);
+		
+		    draw_string(30, 122, "DOLYDV-V1.0", 0XFFFFFF, LcdRight, 32);
+			ip_show_flag = 0;
+			FillBuffer((uint8_t*)g_GuiVram[LcdLeft], (uint8_t*)g_GuiVram[LcdRight]);
+			sleep(5);
+		}
+
+	#if TEST 
 
 
-	// // Fill with buffer example
-	// FillBufferExample();
+		// // Fill with buffer example
+		// FillBufferExample();
 
-	// // wait 2 seconds
-	// std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+		// // wait 2 seconds
+		// std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 
-	// // fill with color example
-	// LcdControl::LcdColorFill(LcdLeft, 0, 0, 255);
-	// LcdControl::LcdColorFill(LcdRight, 255, 0, 0);
-	// for (int i = 0; i <240; i++)
-	// {
-	// 	draw_point (i, i, 0X00FF00, LcdLeft);
-	// }
-	// draw_char(40, 60, 'H', 0XFFFFFF, LcdLeft, 32);
+		// // fill with color example
+		// LcdControl::LcdColorFill(LcdLeft, 0, 0, 255);
+		// LcdControl::LcdColorFill(LcdRight, 255, 0, 0);
+		// for (int i = 0; i <240; i++)
+		// {
+		// 	draw_point (i, i, 0X00FF00, LcdLeft);
+		// }
+		// draw_char(40, 60, 'H', 0XFFFFFF, LcdLeft, 32);
 
-	memset(g_GuiVram[LcdRight], 0xFF, g_RamSize);
-    // draw_allcircle(120, 120, 50, 0X000000, LcdRight);
-	show_eye(120, 120, 90, 0X000000, LcdRight);
-	show_eye(120, 120, 90, 0X000000, LcdLeft);
-	FillBuffer((uint8_t*)g_GuiVram[LcdLeft], (uint8_t*)g_GuiVram[LcdRight]);
+		memset(g_GuiVram[LcdRight], 0xFF, g_RamSize);
+		// draw_allcircle(120, 120, 50, 0X000000, LcdRight);
+		show_eye(120, 120, 90, 0X000000, LcdRight);
+		show_eye(120, 120, 90, 0X000000, LcdLeft);
+		FillBuffer((uint8_t*)g_GuiVram[LcdLeft], (uint8_t*)g_GuiVram[LcdRight]);
 
-#else
-    FillBuffer((uint8_t*)gImage_love, (uint8_t*)gImage_love);
+	#else
+		FillBuffer((uint8_t*)gImage_love, (uint8_t*)gImage_love);
 
-#endif
-	
+	#endif
+	    usleep(200000);
+	};
 }
 
 int FillBuffer(uint8_t *left_buff, uint8_t *right_buff)

@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libcommu.a CMakeFiles/commu_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/commu/tcp/TcpServer.cpp.o
+/usr/bin/ranlib /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libcommu.a

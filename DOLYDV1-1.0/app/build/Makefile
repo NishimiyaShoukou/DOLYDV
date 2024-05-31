@@ -142,32 +142,59 @@ app_static/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/build
 .PHONY : app_static/fast
 
-home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.o: home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.o
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.o: home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o
 
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.o
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.o
 
 # target to build an object file
-home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.o
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.o
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o
 
-home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.i: home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.i
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.i: home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.i
 
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.i
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.i
 
 # target to preprocess a source file
-home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.i
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.i
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.i
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.i
 
-home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.s: home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.s
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.s: home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.s
 
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.s
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.s
 
 # target to generate assembly for a file
-home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.s
-.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.cpp.s
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.s
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.s
+
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.o: home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.o
+
+# target to build an object file
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o
+
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.i: home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.i
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.i
+
+# target to preprocess a source file
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.i
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.i
+
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.s: home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.s
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.s
+
+# target to generate assembly for a file
+home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.s
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.s
 
 # Help Target
 help:
@@ -178,9 +205,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app_static"
-	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.o"
-	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.i"
-	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/AppDoly.s"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.o"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.i"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.s"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.o"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.i"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.s"
 .PHONY : help
 
 

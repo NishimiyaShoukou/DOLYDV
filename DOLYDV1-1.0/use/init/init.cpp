@@ -3,7 +3,7 @@
 #include "Gpio.h"
 #include "LcdControl.h"
 #include <thread>
-#include "AppDoly.h"
+#include "app.h"
 #include <iostream>
 
 
@@ -27,9 +27,10 @@ void init_hw(void)
 
 	// Initialize and configure servo motors
 	ServoMotor::Init();
+	ServoMotor::setup(SERVO_LEFT, 500, 2500, SERVO_ARM_MAX_ANGLE, false);
+	ServoMotor::setup(SERVO_RIGHT, 500, 2500, SERVO_ARM_MAX_ANGLE, true);
+	// LcdControl::init(LCD_12BIT);
 
-	LcdControl::init(LCD_12BIT);
-
-	LcdColorDepth depth = LcdControl::getColorDepth();
+	// LcdColorDepth depth = LcdControl::getColorDepth();
     printf("init complete!\r\n");    
 }

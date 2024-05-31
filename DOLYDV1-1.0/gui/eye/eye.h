@@ -1,7 +1,7 @@
 #pragma once
 #include "LcdControl.h"
 void gui_init(LcdColorDepth depth = LCD_12BIT);
-void gui_task(void);
+void* gui_task(void *);
 void eye_clear(void);
 int draw_point (int x, int y, uint32_t color, uint8_t lcd_side);
 void draw_char(uint16_t x,uint16_t y,uint8_t num, uint32_t color, uint8_t lcd_side,uint8_t sizey);

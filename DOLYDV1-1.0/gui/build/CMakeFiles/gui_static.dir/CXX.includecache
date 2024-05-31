@@ -6,11 +6,69 @@
 
 #IncludeRegexTransform: 
 
+../../app/AppDoly/inc/AppCommu.h
+
+../../app/AppDoly/inc/AppDoly.h
+
+../../commu/tcp/TcpServer.h
+iostream
+-
+vector
+-
+errno.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+string.h
+-
+arpa/inet.h
+-
+pthread.h
+-
+thread
+-
+algorithm
+-
+cctype
+-
+mutex
+-
+arpa/inet.h
+-
+sys/ioctl.h
+-
+net/if.h
+-
+
 ../../include/pub/LcdControl.h
 stdint.h
 -
 vector
 -
+
+../../include/pub/app.h
+commu.h
+../../include/pub/commu.h
+../../app/AppDoly/inc/AppDoly.h
+../../app/AppDoly/inc/AppDoly.h
+../../app/AppDoly/inc/AppCommu.h
+../../app/AppDoly/inc/AppCommu.h
+
+../../include/pub/commu.h
+../../commu/tcp/TcpServer.h
+../../commu/tcp/TcpServer.h
 
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.h
 
@@ -37,14 +95,14 @@ efont.h
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/efont.h
 love.h
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/love.h
-small_minmin.h
-/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/small_minmin.h
+app.h
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/app.h
+commu.h
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/commu.h
 
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.h
 LcdControl.h
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/LcdControl.h
 
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/love.h
-
-/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/small_minmin.h
 

@@ -76,9 +76,22 @@ include CMakeFiles/base_static.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/base_static.dir/flags.make
 
+CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o: CMakeFiles/base_static.dir/flags.make
+CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o -c /home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp
+
+CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp > CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.i
+
+CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp -o CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.s
+
 CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o: CMakeFiles/base_static.dir/flags.make
 CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o -c /home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp
 
 CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.i: cmake_force
@@ -91,15 +104,17 @@ CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp
 
 # Object files for target base_static
 base_static_OBJECTS = \
+"CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o" \
 "CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o"
 
 # External object files for target base_static
 base_static_EXTERNAL_OBJECTS =
 
+/home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libbase.a: CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o
 /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libbase.a: CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o
 /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libbase.a: CMakeFiles/base_static.dir/build.make
 /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libbase.a: CMakeFiles/base_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libbase.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libbase.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/base_static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/base_static.dir/link.txt --verbose=$(VERBOSE)
 

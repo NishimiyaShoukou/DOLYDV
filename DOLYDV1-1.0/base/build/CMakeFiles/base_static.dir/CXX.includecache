@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../kernel_dir/keyctl.h
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp
+dolywifi.h
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.h
+iostream
+-
+cstdlib
+-
 
-/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp
-keyctl.h
--
-termio.h
--
-stdio.h
--
-unistd.h
--
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.h
 

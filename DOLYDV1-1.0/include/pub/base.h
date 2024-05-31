@@ -2,4 +2,5 @@
 
 
 /*********************  base.h  *******************************/
-extern int scanKeyboard(void);
+#include "../../base/kernel_dir/keyctl.h"
+#include "../../base/kernel_dir/dolywifi.h"

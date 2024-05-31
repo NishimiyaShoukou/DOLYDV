@@ -14,6 +14,8 @@ CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.cpp.o: /home/p
 
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../app/AppDoly/inc/AppCommu.h
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../app/AppDoly/inc/AppDoly.h
+CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../base/kernel_dir/dolywifi.h
+CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../base/kernel_dir/keyctl.h
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../commu/tcp/TcpServer.h
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../gui/eye/eye.h
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o: ../../include/pub/Gpio.h

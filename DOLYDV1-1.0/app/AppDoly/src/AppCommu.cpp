@@ -14,6 +14,7 @@
 /*    2024-11-26                V1.00        wangwentao             Create          */
 #include "AppCommu.h"
 #include "commu.h"
+#include "gui.h"
 #include <iostream>
 #include <csignal>
 #include <ctime>
@@ -142,6 +143,17 @@ static char process_Comm(char *buf, unsigned char buf_len)
 				// GPIO::writePin(Pin_Servo_Left_Enable, LOW);
 				// GPIO::writePin(Pin_Servo_Right_Enable, LOW);							
 			}
+			if (strcmp(receive_cmd, "STIM") == 0)   // SET ARM 0 DEGREE 
+			{
+				set_eyestate(1);
+						
+			}
+			if (strcmp(receive_cmd, "SEYE") == 0)   // SET ARM 0 DEGREE 
+			{
+				set_eyestate(0);
+						
+			}
+			break;
 		case 'R':
 			if (strcmp(receive_cmd, "RARM") == 0)   // DISABLE ARM 
 			{

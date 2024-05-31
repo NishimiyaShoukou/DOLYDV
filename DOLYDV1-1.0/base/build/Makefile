@@ -142,6 +142,33 @@ base_static/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/build
 .PHONY : base_static/fast
 
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.o: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.o
+
+# target to build an object file
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o
+
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.i: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.i
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.i
+
+# target to preprocess a source file
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.i
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.i
+
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.s: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.s
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.s
+
+# target to generate assembly for a file
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.s
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.s
+
 home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.o: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o
 
 .PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.o
@@ -178,6 +205,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... base_static"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.o"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.i"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.s"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.o"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.i"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.s"

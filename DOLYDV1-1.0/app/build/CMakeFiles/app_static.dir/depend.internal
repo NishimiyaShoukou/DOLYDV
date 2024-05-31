@@ -3,9 +3,12 @@
 
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o
  ../../commu/tcp/TcpServer.h
+ ../../gui/eye/eye.h
  ../../include/pub/Gpio.h
+ ../../include/pub/LcdControl.h
  ../../include/pub/ServoMotor.h
  ../../include/pub/commu.h
+ ../../include/pub/gui.h
  ../AppDoly/inc/AppCommu.h
  /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o

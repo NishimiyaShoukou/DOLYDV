@@ -18,26 +18,33 @@
 
 int Thread_Attr_Set( pthread_attr_t *attr, struct sched_param *sched );
 #define QUIT_KEY         		(char)113
-
+static vector<int> opts = { SO_REUSEPORT, SO_REUSEADDR };
+static uint8_t g_WifiState;
 // press 'q' exit all thread
 // 按q退出所有程序
 extern "C" void * monthread(void *)
 {
 
     uint8_t ch;
+
+
 	while(1)
 	{
         
         ch = scanKeyboard();
         
-        sleep(1);
+        
         printf("getkey:%d\r\n",ch);
+        printf("monrun\r\n");
         if (QUIT_KEY == ch)
         {
 
             printf("helloworldgui\r\n");
             pthread_exit(0);
         }
+ 
+
+        sleep(1);
 		// sleep(2);
 	}
 	
@@ -46,11 +53,52 @@ extern "C" void * monthread(void *)
 // test
 extern "C" void * testthread(void *)
 {
-  
+ 	int          creat_status = 0;
+    pthread_t    tcp_recv_thread;
+    pthread_attr_t          tcp_recv_thread_attr;
+    struct sched_param          tcp_recv_thread_sched; 
 	while(1)
 	{
-        tcp.accepted();
+        if (g_WifiState == 0)
+        {
+            tcp.accepted();
+        }
+       // wifi connect fail
+        if (g_WifiState == 1)
+        {
+            std::cout << "step11111111" << std::endl;
+            if (isWifiConnected()) {
+                g_WifiState = 0;
+                std::cout << "WiFi is connected." << std::endl;
+                if (tcp.setup(IP_PORT, opts) == 0)
+                {
+                    tcp_recv_thread_sched.sched_priority = 33; 
+                    /* set priority */
+                    creat_status = Thread_Attr_Set(&tcp_recv_thread_attr, &tcp_recv_thread_sched);
+                    /* create thread */
+                    creat_status = pthread_create(&tcp_recv_thread, \
+                                            &tcp_recv_thread_attr, \
+                                            tcp_server_recv, \
+                                            (void *)NULL);
+                    if (creat_status != 0)
+                    {
+                        printf("Initial thread terminating with an error\n");
+                        exit(EXIT_FAILURE);
+                    }	
+                }
+                else
+                {
+                    std::cout << "TCP init faild." << std::endl;
+                }
+
+    
+            } else {
+                g_WifiState = 1;
+                std::cout << "WiFi is not connected." << std::endl;
+            }
+        }        
         printf("app run\r\n");
+        printf("wificon%d\r\n", g_WifiState);
         // printf("ip:%s\r\n", get_local_ip());
 		sleep(2);
 	}
@@ -107,21 +155,29 @@ int main()
 	/**************************************************************************/
 	/* tcp_recv task init                              		                  */
 	/**************************************************************************/
-    vector<int> opts = { SO_REUSEPORT, SO_REUSEADDR };
-    tcp.setup(IP_PORT, opts);
-    tcp_recv_thread_sched.sched_priority = 33; 
-    /* set priority */
-    creat_status = Thread_Attr_Set(&tcp_recv_thread_attr, &tcp_recv_thread_sched);
-    /* create thread */
-    creat_status = pthread_create(&tcp_recv_thread, \
-                            &tcp_recv_thread_attr, \
-                            tcp_server_recv, \
-                            (void *)NULL);
-    if (creat_status != 0)
-    {
-        printf("Initial thread terminating with an error\n");
-        exit(EXIT_FAILURE);
-    }	
+   
+    if (isWifiConnected()) {
+        std::cout << "WiFi is connected." << std::endl;
+        tcp.setup(IP_PORT, opts);
+        tcp_recv_thread_sched.sched_priority = 33; 
+        /* set priority */
+        creat_status = Thread_Attr_Set(&tcp_recv_thread_attr, &tcp_recv_thread_sched);
+        /* create thread */
+        creat_status = pthread_create(&tcp_recv_thread, \
+                                &tcp_recv_thread_attr, \
+                                tcp_server_recv, \
+                                (void *)NULL);
+        if (creat_status != 0)
+        {
+            printf("Initial thread terminating with an error\n");
+            exit(EXIT_FAILURE);
+        }	
+
+    } else {
+        std::cout << "WiFi is not connected." << std::endl;
+        g_WifiState = 1;
+    }
+ 
 	/**************************************************************************/
 	/* gui task init                              		                  */
 	/**************************************************************************/

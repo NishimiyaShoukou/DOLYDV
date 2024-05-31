@@ -48,25 +48,47 @@ sys/ioctl.h
 net/if.h
 -
 
+../../gui/eye/eye.h
+LcdControl.h
+../../gui/eye/LcdControl.h
+
 ../../include/pub/Gpio.h
 stdint.h
+-
+
+../../include/pub/LcdControl.h
+stdint.h
+-
+vector
 -
 
 ../../include/pub/ServoMotor.h
 stdint.h
 -
 
+../../include/pub/base.h
+
 ../../include/pub/commu.h
 ../../commu/tcp/TcpServer.h
 ../../commu/tcp/TcpServer.h
 
+../../include/pub/gui.h
+commu.h
+../../include/pub/commu.h
+../../gui/eye/eye.h
+../../gui/eye/eye.h
+
 ../AppDoly/inc/AppCommu.h
+
+../AppDoly/inc/AppDoly.h
 
 /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp
 AppCommu.h
 /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.h
 commu.h
 /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/commu.h
+gui.h
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/gui.h
 iostream
 -
 csignal
@@ -79,4 +101,22 @@ Gpio.h
 /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/Gpio.h
 thread
 -
+
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp
+AppDoly.h
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.h
+iostream
+-
+base.h
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/base.h
+ServoMotor.h
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/ServoMotor.h
+Gpio.h
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/Gpio.h
+LcdControl.h
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/LcdControl.h
+thread
+-
+eye.h
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/eye.h
 

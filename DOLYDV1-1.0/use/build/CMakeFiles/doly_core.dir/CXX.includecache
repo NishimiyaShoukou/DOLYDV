@@ -10,6 +10,10 @@
 
 ../../app/AppDoly/inc/AppDoly.h
 
+../../base/kernel_dir/dolywifi.h
+
+../../base/kernel_dir/keyctl.h
+
 ../../commu/tcp/TcpServer.h
 iostream
 -
@@ -52,6 +56,10 @@ sys/ioctl.h
 net/if.h
 -
 
+../../gui/eye/eye.h
+LcdControl.h
+../../gui/eye/LcdControl.h
+
 ../../include/pub/Gpio.h
 stdint.h
 -
@@ -66,6 +74,10 @@ vector
 stdint.h
 -
 
+../../include/pub/Timer.h
+stdint.h
+-
+
 ../../include/pub/app.h
 commu.h
 ../../include/pub/commu.h
@@ -74,25 +86,51 @@ commu.h
 ../../app/AppDoly/inc/AppCommu.h
 ../../app/AppDoly/inc/AppCommu.h
 
+../../include/pub/base.h
+../../base/kernel_dir/keyctl.h
+../../base/kernel_dir/keyctl.h
+../../base/kernel_dir/dolywifi.h
+../../base/kernel_dir/dolywifi.h
+
 ../../include/pub/commu.h
 ../../commu/tcp/TcpServer.h
 ../../commu/tcp/TcpServer.h
 
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.cpp
+../../include/pub/gui.h
+commu.h
+../../include/pub/commu.h
+../../gui/eye/eye.h
+../../gui/eye/eye.h
+
+../init/init.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp
+main.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/main.h
+unistd.h
+-
 init.h
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init.h
 ServoMotor.h
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/ServoMotor.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/ServoMotor.h
 Gpio.h
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/Gpio.h
-LcdControl.h
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/LcdControl.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/Gpio.h
 thread
 -
+sched.h
+-
 app.h
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/app.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/app.h
 iostream
 -
+time.h
+-
+base.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/base.h
+gui.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/gui.h
+Timer.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/Timer.h
 
-/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/main.h
 

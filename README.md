@@ -1,3 +1,4 @@
+
 # DIY DOLY robot open-source 
 
 ​    On the basis of the official hardware, I write my own DOLY robot code, welcome to participate
@@ -33,3 +34,4 @@
 `./doly_core`
 
 ## Your help is welcome
+![效果图](./image/clock.jpg)

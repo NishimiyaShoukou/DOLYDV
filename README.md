@@ -2,7 +2,8 @@
 # DIY DOLY robot open-source 
 
 ​    On the basis of the official hardware, I write my own DOLY robot code, welcome to participate
-
+    
+    Raspberry Pi Robot
 ## Project Introduction
 
    The project plans to write the DOLY robot application layer and driver layer code. The application layer code is built using cmake, and you are welcome to write your own bot program together

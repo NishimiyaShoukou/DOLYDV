@@ -12,7 +12,8 @@
 #include "base.h"
 #include "gui.h"
 #include "Timer.h"
-// 通过pthread实现多线程，未完善
+
+// 通过pthread实现多线程，�?完善
 
 
 
@@ -21,7 +22,7 @@ int Thread_Attr_Set( pthread_attr_t *attr, struct sched_param *sched );
 static vector<int> opts = { SO_REUSEPORT, SO_REUSEADDR };
 static uint8_t g_WifiState;
 // press 'q' exit all thread
-// 按q退出所有程序
+// 按q退出所有程�?
 extern "C" void * monthread(void *)
 {
 
@@ -57,6 +58,8 @@ extern "C" void * testthread(void *)
     pthread_t    tcp_recv_thread;
     pthread_attr_t          tcp_recv_thread_attr;
     struct sched_param          tcp_recv_thread_sched; 
+    // Rate testfrq(0.5);
+    Timer time_count;
 	while(1)
 	{
         if (g_WifiState == 0)
@@ -97,10 +100,12 @@ extern "C" void * testthread(void *)
                 std::cout << "WiFi is not connected." << std::endl;
             }
         }        
-        printf("app run\r\n");
+        printf("app run:%ld\r\n" ,time_count.elapsed_ms());
+        time_count.reset();
         printf("wificon%d\r\n", g_WifiState);
         // printf("ip:%s\r\n", get_local_ip());
-		sleep(2);
+		sleep(1);
+        // testfrq.sleep();
 	}
 	
 }
@@ -109,16 +114,19 @@ extern "C" void * testthread(void *)
 int main()
 {
 	int          creat_status = 0;
+    pthread_t    clock_thread;
 	pthread_t    mon_thread;
     pthread_t    tcp_recv_thread;
     pthread_t    app_thread;
     pthread_t    gui_thread;
 
+    pthread_attr_t          clock_thread_attr;
 	pthread_attr_t          mon_thread_attr;
     pthread_attr_t          app_thread_attr;
     pthread_attr_t          tcp_recv_thread_attr;
     pthread_attr_t          gui_thread_attr;
 
+    struct sched_param          clock_thread_sched;
 	struct sched_param          mon_thread_sched;
     struct sched_param          app_thread_sched;
     struct sched_param          tcp_recv_thread_sched;
@@ -134,11 +142,26 @@ int main()
     }
 	// Setup Servo power control GPIO as output and set HIGH as a default value
 	init_system();
-
+	/**************************************************************************/
+	/* clock task init                              		                  */
+	/**************************************************************************/
+    clock_thread_sched.sched_priority = 50; 
+    /* set priority */
+    creat_status = Thread_Attr_Set(&clock_thread_attr, &clock_thread_sched);
+    /* create thread */
+    creat_status = pthread_create(&clock_thread, \
+                            &clock_thread_attr, \
+                            clock_task, \
+                            (void *)NULL);
+    if (creat_status != 0)
+    {
+        printf("Initial thread terminating with an error\n");
+        exit(EXIT_FAILURE);
+    }
 	/**************************************************************************/
 	/* monitor task init                              		                  */
 	/**************************************************************************/
-    mon_thread_sched.sched_priority = 50; 
+    mon_thread_sched.sched_priority = 41; 
     /* set priority */
     creat_status = Thread_Attr_Set(&mon_thread_attr, &mon_thread_sched);
     /* create thread */
@@ -219,6 +242,7 @@ int main()
 
 	pthread_join(mon_thread, 0);
 	/* Cancel thread */
+    pthread_cancel(clock_thread);
 	pthread_cancel(mon_thread);
     pthread_cancel(tcp_recv_thread);
     pthread_cancel(app_thread);

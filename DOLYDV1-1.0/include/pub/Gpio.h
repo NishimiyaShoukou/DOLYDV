@@ -1,6 +1,7 @@
 #pragma once
 #include <stdint.h>
-
+#include <iostream>
+#include <memory>
 enum GpioType :uint8_t
 {
 	GPIO_INPUT = 0,
@@ -36,6 +37,7 @@ enum PwmId :uint8_t
 	Pwm_Motor_Right_H = 14,
 	Pwm_Motor_Right_L = 15,
 };
+class GpioPin;
 
 namespace GPIO
 {
@@ -61,4 +63,5 @@ namespace GPIO
 	// return -2 undefined id
 	int8_t writePwm(PwmId id, uint16_t value);
 
+	GpioState readPin(std::shared_ptr<GpioPin> pin);
 };

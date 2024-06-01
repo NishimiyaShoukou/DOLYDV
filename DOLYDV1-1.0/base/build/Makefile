@@ -142,6 +142,33 @@ base_static/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/build
 .PHONY : base_static/fast
 
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.o: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.o
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.o
+
+# target to build an object file
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.o
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.o
+
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.i: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.i
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.i
+
+# target to preprocess a source file
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.i
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.i
+
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.s: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.s
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.s
+
+# target to generate assembly for a file
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.s
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.s
+
 home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.o: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o
 
 .PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.o
@@ -196,6 +223,33 @@ home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.s
 .PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.s
 
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.o: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.o
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.o
+
+# target to build an object file
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.o
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.o
+
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.i: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.i
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.i
+
+# target to preprocess a source file
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.i
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.i
+
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.s: home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.s
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.s
+
+# target to generate assembly for a file
+home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/base_static.dir/build.make CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.s
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -205,12 +259,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... base_static"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.o"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.i"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.s"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.o"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.i"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.s"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.o"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.i"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.s"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.o"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.i"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.s"
 .PHONY : help
 
 

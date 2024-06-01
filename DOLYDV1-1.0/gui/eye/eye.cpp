@@ -20,6 +20,7 @@
 #include "love.h"
 #include "app.h"
 #include "commu.h"
+#include "base.h"
 #define TEST 1
 int FillBuffer(uint8_t *left_buff, uint8_t *right_buff);
 int FillBufferExample();
@@ -103,6 +104,7 @@ void* gui_task(void *)
 	gui_init(LCD_18BIT);
 	// LcdControl::init(LCD_18BIT);
     LcdColorDepth depth = LcdControl::getColorDepth();
+
 	for (;;)
 	{
 		if(ip_showtime > 0)  // show local ip
@@ -159,6 +161,7 @@ void* gui_task(void *)
 		FillBuffer((uint8_t*)gImage_love, (uint8_t*)gImage_love);
 
 	#endif
+
 	    usleep(200000);
 	};
 }
@@ -464,6 +467,11 @@ void draw_digit(int digit, int x, int y, uint32_t color, uint8_t lcd_side) {
 			draw_allrectangle(x + seg.x, y + seg.y, x + seg.x +seg.w,y + seg.y +seg.h,color, lcd_side);
         
         }
+		else
+		{
+            Segment seg = segments[i];
+			draw_allrectangle(x + seg.x, y + seg.y, x + seg.x +seg.w,y + seg.y +seg.h, 0x000000, lcd_side);			
+		}
     }
 }
 // show local time
@@ -476,11 +484,14 @@ void show_time(void)
     auto current_time_point = std::chrono::system_clock::now(); // 捕获当前时间
     auto current_time_t = std::chrono::system_clock::to_time_t(current_time_point); // 转换为 time_t
 	std::tm now_tm = *std::localtime(&current_time_t);
-
+	// // 消隐
+	// draw_digit(8, 40, 40, 0x000000, LcdRight);
+	// draw_digit(8, 120, 40, 0x000000, LcdRight);
 	sprintf(timr_str, "%02d", now_tm.tm_hour);
  	draw_digit(timr_str[0] - 0x30, 40, 40, 0xFFFFFF, LcdRight);
 	draw_digit(timr_str[1] - 0x30, 120, 40, 0xFFFFFF, LcdRight);
 	// draw_string(50, 50, timr_str, LcdRight,128);
+
 	sprintf(timr_str, "%02d", now_tm.tm_min);
     // draw_string(50, 50, timr_str, LcdLeft,128);
  	draw_digit(timr_str[0] - 0x30, 40, 40, 0xFFFFFF, LcdLeft);
@@ -492,7 +503,7 @@ void show_time(void)
 	}
 
 
-	sprintf(timr_str, "%04d-%02d-%02d", now_tm.tm_year + 1900, now_tm.tm_mon, now_tm.tm_mday);
+	sprintf(timr_str, "%04d-%02d-%02d", now_tm.tm_year + 1900, now_tm.tm_mon + 1, now_tm.tm_mday);
     draw_string(90, 190, timr_str, LcdRight,16);	
 
 	sprintf(timr_str, "%s", getDayOfWeekAbbreviation(now_tm.tm_wday).c_str());

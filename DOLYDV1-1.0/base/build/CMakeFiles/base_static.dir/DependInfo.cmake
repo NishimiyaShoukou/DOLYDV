@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp" "/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.cpp.o"
   "/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp" "/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp.o"
   "/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp" "/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/keycrl.cpp.o"
+  "/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp" "/home/pi/DOLYDV/DOLYDV1-1.0/base/build/CMakeFiles/base_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

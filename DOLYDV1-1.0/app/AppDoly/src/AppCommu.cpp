@@ -3,7 +3,7 @@
 /*                                                                            */
 /*                                                                            */
 /*File name: 	 AppCommu.c                                                */
-/*Content summary: 进行应用层的TCP数据处理解析 	*/
+/*Content summary: 通讯应用层的TCP数据处理解析 	*/
 /*Other instructions:			*/
 /*Current version:				*/
 /*Author: 				*/
@@ -15,6 +15,7 @@
 #include "AppCommu.h"
 #include "commu.h"
 #include "gui.h"
+#include "base.h"
 #include <iostream>
 #include <csignal>
 #include <ctime>
@@ -25,7 +26,7 @@ TCPServer tcp;
 pthread_t msg1[MAX_CLIENT];
 int num_message = 0;
 int time_send   = 2700;
-//暂时确定指令固定大小为4个字节(4个字符)
+//暂时固定指令大小为4字节
 /* Process_Commu里应用 2024/4/26 wwt*/
 static char receive_cmd[5] = {0}; 
 static const unsigned char cmd_len = 4;
@@ -74,14 +75,10 @@ void * tcp_server_recv(void *)
 {
 	vector<descript_socket*> desc;
 	char s_recv_buf[255];
+
 	while(1)
 	{
-        // tcp.accepted();
-		// if (tcp.get_connect_num() == 0)
-		// {
-        //    usleep(20000);
-		// }
-		// printf("tcp...recv\n\r");
+
 		desc = tcp.getMessage();
 		for(unsigned int i = 0; i < desc.size(); i++) {
 			if( desc[i] )
@@ -106,6 +103,8 @@ void * tcp_server_recv(void *)
 				tcp.clean(i);
 			}
 		}
+	
+
 		usleep(1000);
 	}
 

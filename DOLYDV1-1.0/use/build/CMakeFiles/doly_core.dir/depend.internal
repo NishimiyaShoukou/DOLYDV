@@ -8,6 +8,7 @@ CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.cpp.o
  ../../include/pub/Gpio.h
  ../../include/pub/LcdControl.h
  ../../include/pub/ServoMotor.h
+ ../../include/pub/Timer.h
  ../../include/pub/app.h
  ../../include/pub/commu.h
  /home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.cpp
@@ -15,8 +16,10 @@ CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.cpp.o
 CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp.o
  ../../app/AppDoly/inc/AppCommu.h
  ../../app/AppDoly/inc/AppDoly.h
+ ../../base/kernel_dir/clock.h
  ../../base/kernel_dir/dolywifi.h
  ../../base/kernel_dir/keyctl.h
+ ../../base/kernel_dir/rate.h
  ../../commu/tcp/TcpServer.h
  ../../gui/eye/eye.h
  ../../include/pub/Gpio.h

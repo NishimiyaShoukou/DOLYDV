@@ -10,6 +10,18 @@
 
 ../../app/AppDoly/inc/AppDoly.h
 
+../../base/kernel_dir/clock.h
+
+../../base/kernel_dir/dolywifi.h
+
+../../base/kernel_dir/keyctl.h
+
+../../base/kernel_dir/rate.h
+Timer.h
+../../base/kernel_dir/Timer.h
+chrono
+-
+
 ../../commu/tcp/TcpServer.h
 iostream
 -
@@ -58,6 +70,10 @@ stdint.h
 vector
 -
 
+../../include/pub/Timer.h
+stdint.h
+-
+
 ../../include/pub/app.h
 commu.h
 ../../include/pub/commu.h
@@ -65,6 +81,16 @@ commu.h
 ../../app/AppDoly/inc/AppDoly.h
 ../../app/AppDoly/inc/AppCommu.h
 ../../app/AppDoly/inc/AppCommu.h
+
+../../include/pub/base.h
+../../base/kernel_dir/keyctl.h
+../../base/kernel_dir/keyctl.h
+../../base/kernel_dir/dolywifi.h
+../../base/kernel_dir/dolywifi.h
+../../base/kernel_dir/rate.h
+../../base/kernel_dir/rate.h
+../../base/kernel_dir/clock.h
+../../base/kernel_dir/clock.h
 
 ../../include/pub/commu.h
 ../../commu/tcp/TcpServer.h
@@ -101,6 +127,8 @@ app.h
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/app.h
 commu.h
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/commu.h
+base.h
+/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/base.h
 
 /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.h
 LcdControl.h

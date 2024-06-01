@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+../../base/kernel_dir/clock.h
+
+../../base/kernel_dir/dolywifi.h
+
+../../base/kernel_dir/keyctl.h
+
+../../base/kernel_dir/rate.h
+Timer.h
+../../base/kernel_dir/Timer.h
+chrono
+-
+
 ../../commu/tcp/TcpServer.h
 iostream
 -
@@ -55,6 +67,10 @@ LcdControl.h
 ../../include/pub/Gpio.h
 stdint.h
 -
+iostream
+-
+memory
+-
 
 ../../include/pub/LcdControl.h
 stdint.h
@@ -66,7 +82,19 @@ vector
 stdint.h
 -
 
+../../include/pub/Timer.h
+stdint.h
+-
+
 ../../include/pub/base.h
+../../base/kernel_dir/keyctl.h
+../../base/kernel_dir/keyctl.h
+../../base/kernel_dir/dolywifi.h
+../../base/kernel_dir/dolywifi.h
+../../base/kernel_dir/rate.h
+../../base/kernel_dir/rate.h
+../../base/kernel_dir/clock.h
+../../base/kernel_dir/clock.h
 
 ../../include/pub/commu.h
 ../../commu/tcp/TcpServer.h
@@ -89,6 +117,8 @@ commu.h
 /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/commu.h
 gui.h
 /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/gui.h
+base.h
+/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/base.h
 iostream
 -
 csignal

@@ -2,14 +2,15 @@
 #include <stdint.h>
 
 
-namespace Timer
+class Timer
 {
-    int64_t   reset(void);
+    public:
+        int64_t   reset(void);
 
 
-    int64_t   elapsed_us(void);
+        int64_t   elapsed_us(void);
 
-    int64_t   elapsed_ms(void);
+        int64_t   elapsed_ms(void);
 
-    int64_t   elapsed(void);
+        int64_t   elapsed(void);
 };

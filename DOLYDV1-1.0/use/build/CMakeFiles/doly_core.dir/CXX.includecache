@@ -10,9 +10,17 @@
 
 ../../app/AppDoly/inc/AppDoly.h
 
+../../base/kernel_dir/clock.h
+
 ../../base/kernel_dir/dolywifi.h
 
 ../../base/kernel_dir/keyctl.h
+
+../../base/kernel_dir/rate.h
+Timer.h
+../../base/kernel_dir/Timer.h
+chrono
+-
 
 ../../commu/tcp/TcpServer.h
 iostream
@@ -63,6 +71,10 @@ LcdControl.h
 ../../include/pub/Gpio.h
 stdint.h
 -
+iostream
+-
+memory
+-
 
 ../../include/pub/LcdControl.h
 stdint.h
@@ -91,6 +103,10 @@ commu.h
 ../../base/kernel_dir/keyctl.h
 ../../base/kernel_dir/dolywifi.h
 ../../base/kernel_dir/dolywifi.h
+../../base/kernel_dir/rate.h
+../../base/kernel_dir/rate.h
+../../base/kernel_dir/clock.h
+../../base/kernel_dir/clock.h
 
 ../../include/pub/commu.h
 ../../commu/tcp/TcpServer.h

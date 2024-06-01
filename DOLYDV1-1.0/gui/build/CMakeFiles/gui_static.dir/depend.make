@@ -6,9 +6,15 @@ CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.cpp.o: /h
 
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../app/AppDoly/inc/AppCommu.h
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../app/AppDoly/inc/AppDoly.h
+CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../base/kernel_dir/clock.h
+CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../base/kernel_dir/dolywifi.h
+CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../base/kernel_dir/keyctl.h
+CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../base/kernel_dir/rate.h
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../commu/tcp/TcpServer.h
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../include/pub/LcdControl.h
+CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../include/pub/Timer.h
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../include/pub/app.h
+CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../include/pub/base.h
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: ../../include/pub/commu.h
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/animation.h
 CMakeFiles/gui_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/eye.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/gui/eye/efont.h

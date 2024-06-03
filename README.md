@@ -11,7 +11,7 @@
 > ​    Official github： [robotdoly/DOLY-DIY: DIY Doly project (github.com)](https://github.com/robotdoly/DOLY-DIY)
 
 ## Robot Software Directory Framework
-   [Diretory Doc](/Doc/Robot Software Directory Framework (tentative).md)
+   [Diretory Doc](./Doc/Robot Software Directory Framework (tentative).md)
 
 ## Example of use
 

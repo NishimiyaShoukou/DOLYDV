@@ -121,6 +121,7 @@ bin/doly_core: ../lib/libapp.a
 bin/doly_core: ../lib/libbase.a
 bin/doly_core: ../lib/libcommu.a
 bin/doly_core: ../lib/libgui.a
+bin/doly_core: ../lib/libxGpio.a
 bin/doly_core: CMakeFiles/doly_core.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/use/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/doly_core"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/doly_core.dir/link.txt --verbose=$(VERBOSE)

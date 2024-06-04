@@ -32,6 +32,7 @@ target_link_libraries(doly_core PUBLIC
                         -Wl,--start-group
                         ${FUNC_LIB}
                         -lpthread
+                        -lgpiod
                         -Wl,--end-group
                       )
 

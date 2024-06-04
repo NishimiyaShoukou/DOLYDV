@@ -21,6 +21,7 @@
 #include "app.h"
 #include "commu.h"
 #include "base.h"
+
 #define TEST 1
 int FillBuffer(uint8_t *left_buff, uint8_t *right_buff);
 int FillBufferExample();
@@ -98,9 +99,10 @@ void gui_init(LcdColorDepth depth)
 void* gui_task(void *)
 {
 	
-	static uint8_t ip_showtime = 6, last_eyeflg;
+	static uint8_t ip_showtime = 15, last_eyeflg;
 	string get_ip;
 	char port[20];
+	
 	gui_init(LCD_18BIT);
 	// LcdControl::init(LCD_18BIT);
     LcdColorDepth depth = LcdControl::getColorDepth();
@@ -155,8 +157,8 @@ void* gui_task(void *)
 			last_eyeflg = g_EyeState;
 		}
 		FillBuffer((uint8_t*)g_GuiVram[LcdLeft], (uint8_t*)g_GuiVram[LcdRight]);
-		
-
+		// printf("touchR:%d touchL:%d\n\r", gpio.readGPIOInput(4), gpio.readGPIOInput(5));
+        
 	#else
 		FillBuffer((uint8_t*)gImage_love, (uint8_t*)gImage_love);
 

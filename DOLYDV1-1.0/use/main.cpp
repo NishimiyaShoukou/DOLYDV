@@ -233,8 +233,8 @@ int main()
         printf("Initial thread terminating with an error\n");
         exit(EXIT_FAILURE);
     }	
-	// app_task();
-	// printf("input:%d" , GPIO::readPin(Touch_R_Input));
+
+
 
 	/**************************************************************************/
 	/* Thread exit                                                             */

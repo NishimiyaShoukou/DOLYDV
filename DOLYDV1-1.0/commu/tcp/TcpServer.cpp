@@ -160,7 +160,12 @@ string TCPServer::get_local_ip(void)
 
     if( ioctl( sock_get_ip, SIOCGIFADDR, &ifr_ip) < 0 )      
     {      
-        return "";      
+		strncpy(ifr_ip.ifr_name, "usb0", sizeof(ifr_ip.ifr_name) - 1); 
+		if( ioctl( sock_get_ip, SIOCGIFADDR, &ifr_ip) < 0 )
+		{
+			return "";  
+		}
+            
     } 
     else
     {

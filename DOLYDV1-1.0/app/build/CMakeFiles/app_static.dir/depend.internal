@@ -10,6 +10,7 @@ CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cp
  ../../gui/eye/eye.h
  ../../include/pub/Gpio.h
  ../../include/pub/LcdControl.h
+ ../../include/pub/Motor.h
  ../../include/pub/ServoMotor.h
  ../../include/pub/Timer.h
  ../../include/pub/base.h

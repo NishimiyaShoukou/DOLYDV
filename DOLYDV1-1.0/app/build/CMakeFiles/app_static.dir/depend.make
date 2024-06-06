@@ -9,6 +9,7 @@ CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cp
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o: ../../gui/eye/eye.h
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o: ../../include/pub/Gpio.h
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o: ../../include/pub/LcdControl.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o: ../../include/pub/Motor.h
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o: ../../include/pub/ServoMotor.h
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o: ../../include/pub/Timer.h
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o: ../../include/pub/base.h

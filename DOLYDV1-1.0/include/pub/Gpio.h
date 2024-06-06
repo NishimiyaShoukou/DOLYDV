@@ -40,8 +40,8 @@ enum PwmId :uint8_t
 
 	Pwm_Motor_Left_L = 12,
 	Pwm_Motor_Left_H = 13,
-	Pwm_Motor_Right_L = 14,
-	Pwm_Motor_Right_H = 15,
+	Pwm_Motor_Right_H = 14,
+	Pwm_Motor_Right_L = 15,
 };
 class GpioPin;
 

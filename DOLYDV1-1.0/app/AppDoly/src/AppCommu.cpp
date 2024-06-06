@@ -22,6 +22,8 @@
 #include "ServoMotor.h"
 #include "Gpio.h"
 #include <thread>
+#include <string>
+#include "Motor.h"
 TCPServer tcp;
 pthread_t msg1[MAX_CLIENT];
 int num_message = 0;
@@ -83,15 +85,15 @@ void * tcp_server_recv(void *)
 		for(unsigned int i = 0; i < desc.size(); i++) {
 			if( desc[i] )
 			{
-				if(!desc[i]->enable_message_runtime) 
-				{
-					desc[i]->enable_message_runtime = true;
-			                if( pthread_create(&msg1[num_message], NULL, tcp_server_send, (void *) desc[i]) == 0) {
-						cerr << "ATTIVA THREAD INVIO MESSAGGI" << endl;
-					}
-					num_message++;
-					// start message background thread
-				}
+				// if(!desc[i]->enable_message_runtime) 
+				// {
+				// 	desc[i]->enable_message_runtime = true;
+			    //             if( pthread_create(&msg1[num_message], NULL, tcp_server_send, (void *) desc[i]) == 0) {
+				// 		cerr << "ATTIVA THREAD INVIO MESSAGGI" << endl;
+				// 	}
+				// 	num_message++;
+				// 	// start message background thread
+				// }
 				cout << "id:      " << desc[i]->id      << endl
 				     << "ip:      " << desc[i]->ip      << endl
 				     << "message: " << desc[i]->message << endl
@@ -110,7 +112,120 @@ void * tcp_server_recv(void *)
 
 }
 
+// SARM LANGLE,RANGLE,SPEED,
+static char SARM_Comand(char *buf, unsigned char buf_len)
+{
+	int index = 0;
+	int num   = 0;
+	// int ret;
 
+	char rec_data[256] = {0};
+	// char rec_cmd[10]   = {0};	
+
+    int left_angle = 0, right_angle = 0, speed = 50;
+	if (buf[index] == 0x20)
+	{
+		// get left angle
+		while (buf[index] != 0x2c) 
+		{
+			if (index >= (buf_len - 1))
+			{
+				return 0;
+			}
+			rec_data[num++] = buf[index++];
+		}
+		rec_data[num] = '\0';
+		left_angle = atoi(rec_data);
+		if ((left_angle < 0) || (left_angle > SERVO_ARM_MAX_ANGLE))
+		{
+			return 0;
+		}
+		index++;
+		num = 0;
+		// get right angle
+		while (buf[index] != 0x2c) 
+		{
+			if (index >= (buf_len - 1))
+			{
+				return 0;
+			}
+			rec_data[num++] = buf[index++];
+		}
+		rec_data[num] = '\0';
+		right_angle = atoi(rec_data);
+		if ((right_angle < 0) || (right_angle > SERVO_ARM_MAX_ANGLE))
+		{
+			return 0;
+		}
+		index++;
+		num = 0;
+		// get speed
+		while (buf[index] != 0x2c) 
+		{
+			if (index >= (buf_len - 1))
+			{
+				return 0;
+			}
+			rec_data[num++] = buf[index++];
+		}
+		rec_data[num] = '\0';
+		speed = atoi(rec_data);
+		if ((speed < 1) || (speed > 100))
+		{
+			return 0;
+		}
+
+				
+		ServoMotor::set(SERVO_LEFT, left_angle, speed);
+	    ServoMotor::set(SERVO_RIGHT, right_angle, speed);
+	}
+	return 1;
+}
+// SPWM ML,MR,
+static char SPWM_Comand(char *buf, unsigned char buf_len)
+{
+	int index = 0;
+	int num   = 0;
+	// int ret;
+
+	char rec_data[256] = {0};
+	// char rec_cmd[10]   = {0};	
+
+    int left_pwm,right_pwm;
+	if (buf[index] == 0x20)
+	{
+		// get left pwm
+		while (buf[index] != 0x2c) 
+		{
+			if (index >= (buf_len - 1))
+			{
+				return 0;
+			}
+			rec_data[num++] = buf[index++];
+		}
+		rec_data[num] = '\0';
+		left_pwm = atoi(rec_data);
+
+		index++;
+		num = 0;
+		// get right pwm
+		while (buf[index] != 0x2c) 
+		{
+			if (index >= (buf_len - 1))
+			{
+				return 0;
+			}
+			rec_data[num++] = buf[index++];
+		}
+	    rec_data[num] = '\0';
+		right_pwm = atoi(rec_data);
+		printf("SPWM");
+		printf(":%d,%d",left_pwm, right_pwm);
+		Motor::setPwm(LeftMotor, left_pwm);
+		Motor::setPwm(RightMotor, right_pwm);
+	}
+	return 1;
+}
 static char process_Comm(char *buf, unsigned char buf_len)
 {
 
@@ -133,24 +248,28 @@ static char process_Comm(char *buf, unsigned char buf_len)
 		case 'S':
 			if (strcmp(receive_cmd, "SARM") == 0)   // SET ARM 0 DEGREE 
 			{
-				GPIO::init(Pin_Servo_Left_Enable, GPIO_OUTPUT, HIGH);
-				GPIO::init(Pin_Servo_Right_Enable, GPIO_OUTPUT, HIGH);
-				
-		        ServoMotor::set(SERVO_LEFT, 0, 100);
-	            ServoMotor::set(SERVO_RIGHT, 0, 100);	
-                printf("rbuf:%s\n\r", receive_cmd);
+				SARM_Comand(buf, buf_len);
+
+				break;
 				// GPIO::writePin(Pin_Servo_Left_Enable, LOW);
 				// GPIO::writePin(Pin_Servo_Right_Enable, LOW);							
 			}
 			if (strcmp(receive_cmd, "STIM") == 0)   // SET ARM 0 DEGREE 
 			{
 				set_eyestate(1);
+				break;
 						
 			}
 			if (strcmp(receive_cmd, "SEYE") == 0)   // SET ARM 0 DEGREE 
 			{
 				set_eyestate(0);
+				break;
 						
+			}
+			if (strcmp(receive_cmd, "SPWM") == 0)   // SET ARM 0 DEGREE 
+			{
+				SPWM_Comand(buf, buf_len);
+				break;
 			}
 			break;
 		case 'R':

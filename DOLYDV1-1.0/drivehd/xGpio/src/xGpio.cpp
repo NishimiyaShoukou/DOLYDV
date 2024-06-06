@@ -43,17 +43,17 @@ int xGPIO::readGPIOInput(int line) {
         return -1;
     }
 
-    if (gpiod_line_request_input(gpio_line, "gpio_read") < 0) {
-        std::cerr << "Failed to request line as input: " << line << std::endl;
-        return -1;
-    }
+    // if (gpiod_line_request_input(gpio_line, "gpio_read") < 0) {
+    //     std::cerr << "Failed to request line as input: " << line << std::endl;
+    //     return -1;
+    // }
 
     int value = gpiod_line_get_value(gpio_line);
     if (value < 0) {
         std::cerr << "Failed to read value from line: " << line << std::endl;
     }
 
-    gpiod_line_release(gpio_line);
+    // gpiod_line_release(gpio_line);
     return value;
 }
 
@@ -78,12 +78,12 @@ void xGPIO::encoderThreadFunction(int lineA, int lineB) {
         return;
     }
 
-    if (gpiod_line_request_both_edges_events(gpio_lineA, "encoder") < 0 ||
-        gpiod_line_request_both_edges_events(gpio_lineB, "encoder") < 0) {
-        std::cerr << "Failed to request both edges events for lines: " << lineA << ", " << lineB << std::endl;
-        running = false;
-        return;
-    }
+    // if (gpiod_line_request_both_edges_events(gpio_lineA, "encoder") < 0 ||
+    //     gpiod_line_request_both_edges_events(gpio_lineB, "encoder") < 0) {
+    //     std::cerr << "Failed to request both edges events for lines: " << lineA << ", " << lineB << std::endl;
+    //     running = false;
+    //     return;
+    // }
 
     struct gpiod_line_event eventA, eventB;
     int lastA = gpiod_line_get_value(gpio_lineA);
@@ -127,8 +127,8 @@ void xGPIO::encoderThreadFunction(int lineA, int lineB) {
         // std::this_thread::sleep_for(std::chrono::milliseconds(1));
     }
 
-    gpiod_line_release(gpio_lineA);
-    gpiod_line_release(gpio_lineB);
+    // gpiod_line_release(gpio_lineA);
+    // gpiod_line_release(gpio_lineB);
 }
 
 int xGPIO::getEncoderValue() {

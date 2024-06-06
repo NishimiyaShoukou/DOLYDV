@@ -263,6 +263,7 @@ int main()
 	pthread_join(mon_thread, 0);
 	/* Cancel thread */
     pthread_cancel(clock_thread);
+    pthread_cancel(movectl_thread);
 	pthread_cancel(mon_thread);
     pthread_cancel(tcp_recv_thread);
     pthread_cancel(app_thread);

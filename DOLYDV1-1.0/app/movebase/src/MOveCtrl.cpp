@@ -25,7 +25,7 @@ void* move_robot_task(void* arg)
         sem_wait(&move_task_sem);
         // EtrLeft.stopEncoder();
         // printf("encode:%d\n\r",EtrLeft.getEncoderValue());
-        // EtrLeft.startEncoder(19,13);
+        // EtrLeft.startEncoder(13,6);
         /* test */
         // gpio_tog = 1 - gpio_tog;
         // if (gpio_tog)

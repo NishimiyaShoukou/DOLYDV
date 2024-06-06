@@ -30,3 +30,20 @@ CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o: ../AppDoly/inc/AppDoly.h
 CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp
 
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../base/kernel_dir/clock.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../base/kernel_dir/dolywifi.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../base/kernel_dir/keyctl.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../base/kernel_dir/rate.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../commu/tcp/TcpServer.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../gui/eye/eye.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../include/pub/Gpio.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../include/pub/LcdControl.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../include/pub/Motor.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../include/pub/Timer.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../include/pub/base.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../include/pub/commu.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../include/pub/gui.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../../include/pub/xGpio.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: ../movebase/inc/MoveCtrl.h
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp
+

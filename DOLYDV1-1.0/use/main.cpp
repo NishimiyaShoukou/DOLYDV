@@ -115,18 +115,21 @@ int main()
 {
 	int          creat_status = 0;
     pthread_t    clock_thread;
+    pthread_t    movectl_thread;
 	pthread_t    mon_thread;
     pthread_t    tcp_recv_thread;
     pthread_t    app_thread;
     pthread_t    gui_thread;
 
     pthread_attr_t          clock_thread_attr;
+    pthread_attr_t          movectl_thread_attr;
 	pthread_attr_t          mon_thread_attr;
     pthread_attr_t          app_thread_attr;
     pthread_attr_t          tcp_recv_thread_attr;
     pthread_attr_t          gui_thread_attr;
 
     struct sched_param          clock_thread_sched;
+    struct sched_param          movectl_thread_sched;
 	struct sched_param          mon_thread_sched;
     struct sched_param          app_thread_sched;
     struct sched_param          tcp_recv_thread_sched;
@@ -152,6 +155,23 @@ int main()
     creat_status = pthread_create(&clock_thread, \
                             &clock_thread_attr, \
                             clock_task, \
+                            (void *)NULL);
+    if (creat_status != 0)
+    {
+        printf("Initial thread terminating with an error\n");
+        exit(EXIT_FAILURE);
+    }
+
+	/**************************************************************************/
+	/* movecontrl task init                              		                  */
+	/**************************************************************************/
+    movectl_thread_sched.sched_priority = 48; 
+    /* set priority */
+    creat_status = Thread_Attr_Set(&movectl_thread_attr, &movectl_thread_sched);
+    /* create thread */
+    creat_status = pthread_create(&movectl_thread, \
+                            &movectl_thread_attr, \
+                            move_robot_task, \
                             (void *)NULL);
     if (creat_status != 0)
     {

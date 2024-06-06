@@ -6,11 +6,12 @@ project (doly_cmake)
 
 # Locate source files within the AppDoly directory
 aux_source_directory(${PROJECT_BINARY_DIR}/../AppDoly/src SRC_APP) 
-
+aux_source_directory(${PROJECT_BINARY_DIR}/../movebase/src SRC_MOVEBASE) 
 # Include directories for public headers
 include_directories (${PROJECT_BINARY_DIR}/../../include/pub)
 # Include directories for base headers
 include_directories (${PROJECT_BINARY_DIR}/../AppDoly/inc)
+include_directories (${PROJECT_BINARY_DIR}/../movebase/inc)
 include_directories (${PROJECT_BINARY_DIR}/../../base/kernel_dir)
 include_directories (${PROJECT_BINARY_DIR}/../../gui/eye)
 
@@ -23,7 +24,7 @@ file(GLOB FUNC_LIB ${PROJECT_BINARY_DIR}/../../use/lib/*.a ${PROJECT_BINARY_DIR}
 
 # Create a static library from the source files
 
-add_library(app_static STATIC ${SRC_APP})
+add_library(app_static STATIC ${SRC_APP} ${SRC_MOVEBASE})
 message("FUNC_LIB = ${FUNC_LIB}")
 # target_link_libraries(app_static  ${FUNC_LIB})
 # Set the output name of the static library to "app"

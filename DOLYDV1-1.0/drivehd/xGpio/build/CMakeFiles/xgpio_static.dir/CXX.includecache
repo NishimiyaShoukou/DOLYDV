@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+../../../include/pub/xGpio.h
+gpiod.h
+-
+string
+-
+thread
+-
+atomic
+-
+
+/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/xGpio/src/xGpio.cpp
+xGpio.h
+/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/xGpio/src/xGpio.h
+iostream
+-
+chrono
+-
+

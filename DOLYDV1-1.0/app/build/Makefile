@@ -196,6 +196,33 @@ home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.s
 .PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.s
 
+home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.o: home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.o
+
+# target to build an object file
+home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o
+
+home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.i: home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.i
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.i
+
+# target to preprocess a source file
+home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.i
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.i
+
+home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.s: home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.s
+
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.s
+
+# target to generate assembly for a file
+home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app_static.dir/build.make CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.s
+.PHONY : home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -211,6 +238,9 @@ help:
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.o"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.i"
 	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.s"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.o"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.i"
+	@echo "... home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.s"
 .PHONY : help
 
 

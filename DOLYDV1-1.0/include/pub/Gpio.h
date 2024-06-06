@@ -21,6 +21,12 @@ enum PinId :uint8_t
 	// >= 50 GPIO_CHIP2
 	Pin_Servo_Left_Enable = 56,
 	Pin_Servo_Right_Enable = 57,
+	GPIO2_Pin0 = 58,
+	GPIO2_Pin1 = 59,
+	GPIO2_Pin2 = 60,
+	GPIO2_Pin3 = 61,
+	GPIO2_Pin5 = 62,
+	GPIO2_Pin6 = 63,
 };
 
 enum PwmId :uint8_t
@@ -32,10 +38,10 @@ enum PwmId :uint8_t
 	Pwm_Led_Right_R = 10,
 	Pwm_Led_Right_G = 11,
 
-	Pwm_Motor_Left_H = 12,
-	Pwm_Motor_Left_L = 13,
-	Pwm_Motor_Right_H = 14,
-	Pwm_Motor_Right_L = 15,
+	Pwm_Motor_Left_L = 12,
+	Pwm_Motor_Left_H = 13,
+	Pwm_Motor_Right_L = 14,
+	Pwm_Motor_Right_H = 15,
 };
 class GpioPin;
 

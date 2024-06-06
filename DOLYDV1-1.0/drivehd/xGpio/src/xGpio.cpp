@@ -65,6 +65,7 @@ void xGPIO::startEncoder(int lineA, int lineB) {
 
     running = true;
     encoderThread = std::thread(&xGPIO::encoderThreadFunction, this, lineA, lineB);
+    encoderValue = 0;
 }
 
 void xGPIO::encoderThreadFunction(int lineA, int lineB) {

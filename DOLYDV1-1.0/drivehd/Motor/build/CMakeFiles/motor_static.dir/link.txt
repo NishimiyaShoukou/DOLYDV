@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libMotor.a CMakeFiles/motor_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Motor/src/Motor.cpp.o
+/usr/bin/ranlib /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libMotor.a

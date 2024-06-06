@@ -30,3 +30,20 @@ CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp
  ../../include/pub/base.h
  ../AppDoly/inc/AppDoly.h
  /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o
+ ../../base/kernel_dir/clock.h
+ ../../base/kernel_dir/dolywifi.h
+ ../../base/kernel_dir/keyctl.h
+ ../../base/kernel_dir/rate.h
+ ../../commu/tcp/TcpServer.h
+ ../../gui/eye/eye.h
+ ../../include/pub/Gpio.h
+ ../../include/pub/LcdControl.h
+ ../../include/pub/Motor.h
+ ../../include/pub/Timer.h
+ ../../include/pub/base.h
+ ../../include/pub/commu.h
+ ../../include/pub/gui.h
+ ../../include/pub/xGpio.h
+ ../movebase/inc/MoveCtrl.h
+ /home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp

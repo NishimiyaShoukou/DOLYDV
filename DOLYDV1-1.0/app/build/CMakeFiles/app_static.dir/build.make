@@ -102,19 +102,34 @@ CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp -o CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.s
 
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: CMakeFiles/app_static.dir/flags.make
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o: /home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o -c /home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp
+
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp > CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.i
+
+CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp -o CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.s
+
 # Object files for target app_static
 app_static_OBJECTS = \
 "CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o" \
-"CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o"
+"CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o" \
+"CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o"
 
 # External object files for target app_static
 app_static_EXTERNAL_OBJECTS =
 
 /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a: CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppCommu.cpp.o
 /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a: CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/AppDoly/src/AppDoly.cpp.o
+/home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a: CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.cpp.o
 /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a: CMakeFiles/app_static.dir/build.make
 /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a: CMakeFiles/app_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/DOLYDV/DOLYDV1-1.0/app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libapp.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/app_static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app_static.dir/link.txt --verbose=$(VERBOSE)
 

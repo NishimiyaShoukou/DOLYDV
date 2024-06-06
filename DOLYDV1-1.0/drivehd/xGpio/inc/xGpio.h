@@ -21,7 +21,10 @@
 #include <string>
 #include <thread>
 #include <atomic>
-
+/*********example:read touch sensor*********************************************************
+*       xGPIO touch("gpiochip2");
+*     printf("touchR:%d touchL:%d\n\r", touch.readGPIOInput(4), touch.readGPIOInput(5));
+********************************************************************************************/
 class xGPIO {
     public:
         xGPIO(const std::string &chipname);

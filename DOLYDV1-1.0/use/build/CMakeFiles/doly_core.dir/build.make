@@ -115,6 +115,7 @@ bin/doly_core: CMakeFiles/doly_core.dir/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init
 bin/doly_core: CMakeFiles/doly_core.dir/build.make
 bin/doly_core: ../lib/libGpio.a
 bin/doly_core: ../lib/libLcdControl.a
+bin/doly_core: ../lib/libMotor.a
 bin/doly_core: ../lib/libServoMotor.a
 bin/doly_core: ../lib/libTimer.a
 bin/doly_core: ../lib/libapp.a

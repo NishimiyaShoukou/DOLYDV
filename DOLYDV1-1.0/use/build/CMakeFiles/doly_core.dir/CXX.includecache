@@ -10,6 +10,8 @@
 
 ../../app/AppDoly/inc/AppDoly.h
 
+../../app/movebase/inc/MoveCtrl.h
+
 ../../base/kernel_dir/clock.h
 
 ../../base/kernel_dir/dolywifi.h
@@ -82,12 +84,18 @@ stdint.h
 vector
 -
 
+../../include/pub/Motor.h
+Gpio.h
+../../include/pub/Gpio.h
+
 ../../include/pub/ServoMotor.h
 stdint.h
 -
 
 ../../include/pub/Timer.h
-stdint.h
+iostream
+-
+chrono
 -
 
 ../../include/pub/app.h
@@ -97,6 +105,8 @@ commu.h
 ../../app/AppDoly/inc/AppDoly.h
 ../../app/AppDoly/inc/AppCommu.h
 ../../app/AppDoly/inc/AppCommu.h
+../../app/movebase/inc/MoveCtrl.h
+../../app/movebase/inc/MoveCtrl.h
 
 ../../include/pub/base.h
 ../../base/kernel_dir/keyctl.h
@@ -119,6 +129,28 @@ commu.h
 ../../gui/eye/eye.h
 
 ../init/init.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.cpp
+init.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.h
+ServoMotor.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/ServoMotor.h
+Gpio.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/Gpio.h
+LcdControl.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/LcdControl.h
+thread
+-
+app.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/app.h
+Timer.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/Timer.h
+iostream
+-
+Motor.h
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/Motor.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/use/init/init.h
 
 /home/pi/DOLYDV/DOLYDV1-1.0/use/main.cpp
 main.h

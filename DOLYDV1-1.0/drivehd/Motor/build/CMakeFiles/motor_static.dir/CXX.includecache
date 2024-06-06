@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../../include/pub/Gpio.h
+stdint.h
+-
+iostream
+-
+memory
+-
+
+../../../include/pub/Motor.h
+Gpio.h
+../../../include/pub/Gpio.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Motor/src/Motor.cpp
+Motor.h
+/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Motor/src/Motor.h
+Gpio.h
+/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Motor/src/Gpio.h
+

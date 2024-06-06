@@ -6,7 +6,7 @@
 #include "app.h"
 #include "Timer.h"
 #include <iostream>
-
+#include "Motor.h"
 Timer tim;
 
 void init_system(void)
@@ -23,10 +23,7 @@ void init_hw(void)
 	GPIO::init(Pin_Servo_Right_Enable, GPIO_OUTPUT, HIGH);
 	// GPIO::init(Touch_R_Input, GPIO_INPUT, HIGH);
 	// GPIO::init(Touch_R_Input, GPIO_INPUT);
-    GPIO::init(Pwm_Motor_Left_H);
-	GPIO::init(Pwm_Motor_Left_L);
-	GPIO::init(Pwm_Motor_Right_H);
-	GPIO::init(Pwm_Motor_Right_L);
+	Motor::init();
 
 	GPIO::init(Pwm_Led_Left_B);
 	GPIO::init(Pwm_Led_Left_R);

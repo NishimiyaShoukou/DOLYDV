@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../../app/AppDoly/inc/AppCommu.h
+
+../../app/AppDoly/inc/AppDoly.h
+
+../../app/movebase/inc/MoveCtrl.h
+
 ../../base/kernel_dir/clock.h
 
 ../../base/kernel_dir/dolywifi.h
@@ -71,8 +77,20 @@ vector
 -
 
 ../../include/pub/Timer.h
-stdint.h
+iostream
 -
+chrono
+-
+
+../../include/pub/app.h
+commu.h
+../../include/pub/commu.h
+../../app/AppDoly/inc/AppDoly.h
+../../app/AppDoly/inc/AppDoly.h
+../../app/AppDoly/inc/AppCommu.h
+../../app/AppDoly/inc/AppCommu.h
+../../app/movebase/inc/MoveCtrl.h
+../../app/movebase/inc/MoveCtrl.h
 
 ../../include/pub/base.h
 ../../base/kernel_dir/keyctl.h
@@ -105,6 +123,36 @@ gui.h
 /home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/gui.h
 Timer.h
 /home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/Timer.h
+app.h
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/app.h
 
 /home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/clock.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.cpp
+dolywifi.h
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.h
+iostream
+-
+cstdlib
+-
+
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/dolywifi.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.cpp
+rate.h
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.h
+chrono
+-
+thread
+-
+cmath
+-
+iostream
+-
+
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/rate.h
+Timer.h
+/home/pi/DOLYDV/DOLYDV1-1.0/base/kernel_dir/Timer.h
+chrono
+-
 

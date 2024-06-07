@@ -118,6 +118,7 @@ bin/doly_core: ../lib/libLcdControl.a
 bin/doly_core: ../lib/libMotor.a
 bin/doly_core: ../lib/libServoMotor.a
 bin/doly_core: ../lib/libTimer.a
+bin/doly_core: ../lib/libTof.a
 bin/doly_core: ../lib/libapp.a
 bin/doly_core: ../lib/libbase.a
 bin/doly_core: ../lib/libcommu.a

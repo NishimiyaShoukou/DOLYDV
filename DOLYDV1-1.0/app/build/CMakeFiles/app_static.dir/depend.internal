@@ -42,6 +42,7 @@ CMakeFiles/app_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/app/movebase/src/MoveCtrl.c
  ../../include/pub/LcdControl.h
  ../../include/pub/Motor.h
  ../../include/pub/Timer.h
+ ../../include/pub/Tof.h
  ../../include/pub/base.h
  ../../include/pub/commu.h
  ../../include/pub/gui.h

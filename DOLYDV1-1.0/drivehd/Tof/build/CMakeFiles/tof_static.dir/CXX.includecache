@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../../include/pub/Gpio.h
+stdint.h
+-
+iostream
+-
+memory
+-
+
+../inc/Tof.h
+stdint.h
+-
+iostream
+-
+
+../inc/vl6180_pi.h
+
+/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Tof/src/Tof.cpp
+Tof.h
+/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Tof/src/Tof.h
+vl6180_pi.h
+/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Tof/src/vl6180_pi.h
+Gpio.h
+/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Tof/src/Gpio.h
+thread
+-
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libTof.a CMakeFiles/tof_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Tof/src/Tof.cpp.o CMakeFiles/tof_static.dir/home/pi/DOLYDV/DOLYDV1-1.0/drivehd/Tof/src/vl6180_pi.cpp.o
+/usr/bin/ranlib /home/pi/DOLYDV/DOLYDV1-1.0/use/lib/libTof.a

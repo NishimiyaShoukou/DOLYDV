@@ -1,3 +1,4 @@
+#pragma once
 #ifdef __cplusplus
 extern "C"{
 #endif 
@@ -5,7 +6,7 @@ extern "C"{
 typedef int vl6180;
 
 #define VL6180_DEFAULT_ADDR 0x29
-
+#define VL6180_SECOND_ADDR 0x2A
 ///Initialize a vl6180 sensor on the i2c bus configured at the specified address
 /// \param device The I2C bus to open. e.g. "1" for using /dev/i2c-1
 /// \param i2c_addr addres of the device. If you don't know, just call the "vl6180_initialise" variant of this function.
@@ -21,7 +22,9 @@ vl6180 vl6180_initialise(int device);
 /// \param handle The handle to the sensor given by vl6180_initialise
 /// \param new_addr The new address to use on the i2c bus for this device
 void vl6180_change_addr(vl6180 handle, int new_addr);
-
+/// \param handle The handle to the sensor given by vl6180_initialise
+/// \param addr The  address to use on the i2c bus for this device
+void vl6180_change_device(vl6180 handle, int Addr);
 //TODO some of theses functions doesn't have the vl6180 prefix. udpate them to avoid name clashing
   
 ///Return the current distance as readed by the sensor

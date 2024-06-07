@@ -55,7 +55,7 @@ void start_range(vl6180 handle) {
 void poll_range(vl6180 handle) {
     char status;
     char range_status;
-
+    char wait_cnt = 0;
     // check the status
     status = read_byte(handle,0x04f);
     range_status = status & 0x07;
@@ -64,6 +64,11 @@ void poll_range(vl6180 handle) {
     while (range_status != 0x04) {
         status = read_byte(handle,0x04f);
         range_status = status & 0x07;
+        wait_cnt++;
+        if (wait_cnt >= 20)
+        {
+            break;
+        }
     }
 }
 
@@ -161,6 +166,12 @@ void vl6180_change_addr(vl6180 handle, int newAddr)
 {
     write_byte(handle, VL6180X_I2C_SLAVE_DEVICE_ADDRESS, newAddr);
     ioctl(handle, I2C_SLAVE, newAddr);
+}
+
+void vl6180_change_device(vl6180 handle, int Addr)
+{
+
+    ioctl(handle, I2C_SLAVE, Addr);
 }
 
 int get_distance(vl6180 handle){

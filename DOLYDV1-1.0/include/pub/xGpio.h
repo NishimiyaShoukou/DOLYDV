@@ -39,6 +39,7 @@ class xGPIO {
         void encoderThreadFunction(int lineA, int lineB);
 
         struct gpiod_chip *chip;
+        int encoder;
         std::thread encoderThread;
         std::atomic<bool> running;
         std::atomic<int> encoderValue;

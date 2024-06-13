@@ -24,6 +24,7 @@
 /*********example:read touch sensor*********************************************************
 *       xGPIO touch("gpiochip2");
 *     printf("touchR:%d touchL:%d\n\r", touch.readGPIOInput(4), touch.readGPIOInput(5));
+*     use encoder need "rmmod doly_drive" 2024/6
 ********************************************************************************************/
 class xGPIO {
     public:
@@ -39,6 +40,7 @@ class xGPIO {
         void encoderThreadFunction(int lineA, int lineB);
 
         struct gpiod_chip *chip;
+        int encoder;
         std::thread encoderThread;
         std::atomic<bool> running;
         std::atomic<int> encoderValue;
